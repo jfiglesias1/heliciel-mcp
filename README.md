@@ -11,6 +11,13 @@ https://mcp.heliciel.com/mcp
 [![Claude directory](https://img.shields.io/badge/Claude-connectors%20directory-d97757)](https://claude.ai/directory/connectors/heliciel-propeller-design)
 [![MCP registry](https://img.shields.io/badge/MCP%20registry-com.heliciel%2Fheliciel-1f6feb)](https://registry.modelcontextprotocol.io)
 
+![The Heliciel 3D viewer inside a conversation: the blade in 3D, view controls, export buttons, and the computed operating point](docs/viewer-3d.png)
+
+<sub>A real session — a 1140 mm, 3-blade marine propeller at 105 rpm: 1002.7 N of thrust,
+222.4 N·m of torque, 2.45 kW, 92 % efficiency. Every figure computed by Heliciel, none of it
+written by the model. The viewer renders inline in ChatGPT; in Claude the same viewer opens
+from a link.</sub>
+
 ---
 
 ## Why this exists
@@ -67,6 +74,8 @@ You need a Heliciel MCP pass — day, week or month — from
 conversation. You connect once and paste your pass key on the consent screen.
 
 ## How it works
+
+![The assistant sends a plain-language request; the MCP server reads it, maps it to Heliciel operations, drives the software and returns the computed result](docs/architecture.svg)
 
 Each pass gets **its own private Heliciel instance**: the real Windows application, driven
 through its own interface rather than through a reimplementation of it. No state is shared
