@@ -10,6 +10,7 @@ https://mcp.heliciel.com/mcp
 
 [![Claude directory](https://img.shields.io/badge/Claude-connectors%20directory-d97757)](https://claude.ai/directory/connectors/heliciel-propeller-design)
 [![MCP registry](https://img.shields.io/badge/MCP%20registry-com.heliciel%2Fheliciel-1f6feb)](https://registry.modelcontextprotocol.io)
+[![LM Studio](https://img.shields.io/badge/LM%20Studio-one--click%20install-4f46e5)](https://lmstudio.ai/install-mcp?name=heliciel&config=eyJ1cmwiOiJodHRwczovL21jcC5oZWxpY2llbC5jb20vbWNwIn0%3D)
 
 ![The Heliciel 3D viewer inside a conversation: the blade in 3D, view controls, export buttons, and the computed operating point](docs/viewer-3d.png)
 

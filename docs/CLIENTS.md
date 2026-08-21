@@ -22,8 +22,16 @@ Install it from the connectors directory — no configuration at all:
 
 **https://claude.ai/directory/connectors/heliciel-propeller-design**
 
-To add it by hand instead: **Settings → Connectors → Add custom connector**, choose the **web**
-(remote) option, and give the server URL above.
+Or by hand: **Customize → Connectors → Add custom connector**, choose the **web** (remote)
+option, and give the server URL above.
+
+> **Install it once from a computer** — Claude on the web, or Claude Desktop. Installing
+> connectors from the mobile apps is still in beta. Once installed, the connector follows your
+> account and works everywhere, iPhone and Android included: you can design a propeller from
+> your phone.
+>
+> And note that the assistant cannot install it for you. Adding a connector is a settings action,
+> reserved to you — ask Claude to connect to Heliciel and it will rightly answer that it cannot.
 
 ## ChatGPT
 
@@ -33,6 +41,29 @@ inline in the conversation.
 ## Mistral Le Chat
 
 **Settings → Connectors → Add a custom MCP connector**, then the server URL.
+
+## LM Studio (and Bionic)
+
+One click, with LM Studio installed:
+
+**[Add Heliciel to LM Studio](https://lmstudio.ai/install-mcp?name=heliciel&config=eyJ1cmwiOiJodHRwczovL21jcC5oZWxpY2llbC5jb20vbWNwIn0%3D)**
+
+Or by hand — **Program** tab in the right sidebar, then **Install › Edit mcp.json**:
+
+```json
+{
+  "mcpServers": {
+    "heliciel": {
+      "url": "https://mcp.heliciel.com/mcp"
+    }
+  }
+}
+```
+
+Restart LM Studio after editing the file; a newly added server is not picked up until then.
+The OAuth sign-in happens in your browser — there is no token to copy into the config.
+
+In **Bionic**, the same server appears under **Connected apps**.
 
 ## VS Code
 
